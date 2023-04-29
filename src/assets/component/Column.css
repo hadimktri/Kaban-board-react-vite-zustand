@@ -8,17 +8,19 @@
   width: 33%;
   align-items: center;
   padding-bottom: 5px;
+  border: transparent 5px solid;
 }
 
 .overColumn {
   background-color: #8ba2ac;
+  border-color: rgb(255, 255, 255);
 }
 
 .topCol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
+  width: 85%;
   border-bottom: solid 1px white;
   margin-bottom: 2px;
 }
@@ -31,10 +33,10 @@
   background-color: rgba(121, 176, 212, 0.8);
   z-index: 1;
   position: absolute;
-  width: 40vw;
+  width: 100vw;
   height: 40%;
   top: 30%;
-  left: 30%;
+  left: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +53,7 @@
   border-radius: 0.3rem;
   margin: 0.1rem;
   height: 2.5rem;
-  min-width: 300px;
+  min-width: 250px;
   padding-left: 5px;
   font-size: large;
 }
@@ -81,4 +83,30 @@
   cursor: pointer;
   padding: 0;
   padding-top: .2rem;
+}
+
+@media(min-width:500px) {
+  .modal {
+    width: 90vw;
+    left: 5%;
+  }
+}
+
+@media(min-width:750px) {
+  .modal {
+    width: 76vw;
+    left: 12%;
+  }
+
+  .input input {
+    min-width: 400px;
+
+  }
+}
+
+@media(min-width:1000px) {
+  .modal {
+    width: 56vw;
+    left: 22%;
+  }
 }

@@ -1,7 +1,25 @@
 .App {
   display: flex;
-  width: 50vw;
+  width: 100vw;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 55vh;
+}
+
+@media(min-width:500px) {
+  .App {
+    width: 95vw;
+  }
+}
+
+@media(min-width:750px) {
+  .App {
+    width: 80vw;
+  }
+}
+
+@media(min-width:1000px) {
+  .App {
+    width: 60vw;
+  }
 }
