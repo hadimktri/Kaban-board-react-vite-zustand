@@ -9,4 +9,12 @@ const store = (set) => ({
     dropTask: (title, state) => set(store => ({ tasks: store.tasks.map(task => task.title === title ? { title, state } : task) }), false, 'dropTask'),
 })
 
-export const useStore = create(persist(devtools(store), { name: 'store' }))
+const log = (config) => (set, get, api) => config(
+    (...args) => {
+        console.log(args);
+        set(...args)
+    },
+    get,
+    api);
+
+export const useStore = create(log(persist(devtools(store), { name: 'store' })))

@@ -11,7 +11,7 @@ export function Task({ task }) {
     return (
         <div className={classNames('mainTask', task.state)} draggable onDragStart={() => setDragged(task.title)}>
             <div className='task' >{task.title}</div>
-            <small onClick={() => deleteTask(task.title)} className='delete'><i class="bi bi-trash"></i></small>
+            <small onClick={() => deleteTask(task.title)} className='delete'><i className="bi bi-trash"></i></small>
         </div>
     )
 }
