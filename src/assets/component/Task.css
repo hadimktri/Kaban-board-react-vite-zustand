@@ -1,0 +1,36 @@
+.mainTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    width: 95%;
+    min-height: 65px;
+    background-color: #eaeaeb;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: move;
+}
+
+.task {
+    padding: 8px;
+}
+
+.delete {
+    align-self: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    color: crimson;
+    font-size: 1.2rem;
+}
+
+.Planning {
+    background-color: #eaeaeb;
+}
+
+.OnGoing {
+    background-color: #e8ffc3;
+}
+
+.Done {
+    background-color: #e7c6db;
+}

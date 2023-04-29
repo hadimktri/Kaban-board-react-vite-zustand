@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5px;
+  background: #f5f2ed;
+  display: flex;
+  justify-content: center;
+}
