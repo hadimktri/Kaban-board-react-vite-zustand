@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+/* eslint-disable react/prop-types */
+import  { useState } from 'react'
 import './column.css'
 import { Task } from './Task'
-import { useStore } from '../../store'
+import { useStore } from '../store'
 import classNames from 'classnames'
 
 export default function Column({ state }) {
@@ -20,7 +21,7 @@ export default function Column({ state }) {
             onDrop={() => { dropTask(dragged, state); setOverColumn(false) }}
         >
             <div className='topCol' >
-                <p>{state}</p>
+                <p className='state'  >{state}</p>
                 <p onClick={() => { setPopInput(state) }} className='add'><i className="bi bi-plus-lg"></i></p>
             </div>
 
